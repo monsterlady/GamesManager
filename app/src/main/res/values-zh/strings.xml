@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">游戏管理器</string>
+    <string name="label_Name">名称</string>
+    <string name="label_Price">价格</string>
+    <string name="label_Date">日期</string>
+    <string name="label_Desc">简介</string>
+    <string name="label_DLC_s">DLC</string>
+    <string name="template_DLC">%d个DLC</string>
+    <string name="title_listGame">游戏列表</string>
+    <string name="title_template_gameDetail">游戏详情：《%s》</string>
+    <string name="title_template_dlcDetail">DLC：%s</string>
+    <string name="title_template_listDlc">《%s》的DLC</string>
+    <string name="default_gameName">层层恐惧</string>
+    <string name="default_gameDesc">Layers of Fear 是一款第一人称迷幻恐怖游戏，主要着重于故事和探索。玩家将控制一位画家，其唯一的目的就是要完成他的巨作。 一栋变化无常的维多利亚时代宅邸、画家破碎不堪精神世界的恐怖幻象，玩家必须在这二者之间游走。</string>
+    <string name="default_dlcName">层层恐惧：遗产</string>
+    <string name="default_dlcDesc">恐惧层：继承扩展了恐惧层的情节，并讲述了画家的女儿的故事，她回到童年的家中面对她的过去。她可以原谅她的父亲，还是会对所发生的一切感到不满？重温她的经历，见证吞噬家庭的悲剧的全部范围。 引导女儿穿过豪宅的左边，并参与她父亲给予全家的疯狂。面对她过去的记忆，塑造她们等待着她的命运。</string>
+    <string name="info_template_listCount">共计%d个条目</string>
+    <string name="hint_deleteConfirm">你确定要删除该项目吗？</string>
+    <string name="hint_cancelConfirm">你有尚未保存的更改，要保存并返回吗？</string>
+    <string name="button_yes">确定</string>
+    <string name="button_no">算了</string>
+    <string name="hint_title">提示</string>
+    <string name="no_desc">没有描述</string>
+    <string name="gamehoursphint">"今天我玩了 "</string>
+    <string name="hours">已运行</string>
+    <string name="Hours">小时</string>
+    <string name="default2_gameName">反恐精英：全球攻势</string>
+    <string name="default2_gameDesc">《反恐精英：全球攻势》（英语：Counter-Strike: Global Offensive），通常简称为CSGO，是一款由Valve与Hidden Path Entertainment合作开发 的第一人称射击游戏，也是《反恐精英：起源》之后《反恐精英》系列游戏的第四部作品（不包括Neo和Online等衍生作品）。</string>
+    <string name="hint_rateGame">你觉得这款游戏怎么样？</string>
+    <string name="label_userRating">玩家评价：</string>
+    <string name="rating_none">暂无评价</string>
+    <string name="rating_good">挺好</string>
+    <string name="rating_soso">一般</string>
+    <string name="rating_bad">不行</string>
+    <string name="chart_hist">柱形图</string>
+    <string name="chart_donut">甜甜圈图</string>
+</resources>
