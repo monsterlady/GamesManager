@@ -1,37 +1,37 @@
-* ListActivity£ºÕâÊÇÒ»¸ö¸´ÓÃµÄActivity£¬ÓÃÀ´ÏÔÊ¾ÓÎÏ·ÁĞ±í»òÕßDLCÁĞ±í¡£appÆô¶¯Ê±Ä¬ÈÏ½øÈëListActivity£¬²¢ÇÒÏÔÊ¾ÓÎÏ·ÁĞ±í¡£
+* ListActivityï¼šè¿™æ˜¯ä¸€ä¸ªå¤ç”¨çš„Activityï¼Œç”¨æ¥æ˜¾ç¤ºæ¸¸æˆåˆ—è¡¨æˆ–è€…DLCåˆ—è¡¨ã€‚appå¯åŠ¨æ—¶é»˜è®¤è¿›å…¥ListActivityï¼Œå¹¶ä¸”æ˜¾ç¤ºæ¸¸æˆåˆ—è¡¨ã€‚
 
-# ÔÚActivityÖ®¼ä´«ËÍÊı¾İ£º
-## ¸¸activity
-1. ´´½¨intent£¬µÚ2¸ö²ÎÊıÊÇÒªµ÷ÓÃµÄ×ÓactivityµÄÀà
+# åœ¨Activityä¹‹é—´ä¼ é€æ•°æ®ï¼š
+## çˆ¶activity
+1. åˆ›å»ºintentï¼Œç¬¬2ä¸ªå‚æ•°æ˜¯è¦è°ƒç”¨çš„å­activityçš„ç±»
 
 ``` java
 Intent intent = new Intent(this, GameDetailActivity.class);
 ```
 
-2. ÏòintentÖĞ·ÅÊı¾İ£¬ÀàËÆÓÚ¼üÖµ¶Ô£¬µÚ1¸ö²ÎÊıÊÇ×Ö·û´®ÀàĞÍµÄKey£¬µÚ2¸ö²ÎÊı¿ÉÒÔÊÇ»ù±¾ÀàĞÍ¡¢String¡¢»òÕßÈÎÒâÊµÏÖSerializable½Ó¿ÚµÄÀà¡£ÒòÎªÒª´«µİGameºÍDLCInfo£¬ËùÒÔÕâÁ½¸öÀà¶¼ÊµÏÖÁËSerializable
+2. å‘intentä¸­æ”¾æ•°æ®ï¼Œç±»ä¼¼äºé”®å€¼å¯¹ï¼Œç¬¬1ä¸ªå‚æ•°æ˜¯å­—ç¬¦ä¸²ç±»å‹çš„Keyï¼Œç¬¬2ä¸ªå‚æ•°å¯ä»¥æ˜¯åŸºæœ¬ç±»å‹ã€Stringã€æˆ–è€…ä»»æ„å®ç°Serializableæ¥å£çš„ç±»ã€‚å› ä¸ºè¦ä¼ é€’Gameå’ŒDLCInfoï¼Œæ‰€ä»¥è¿™ä¸¤ä¸ªç±»éƒ½å®ç°äº†Serializable
 
 ``` java
 intent.putExtra(MSG_ITEM, new Game());
 ```
 
-3. Æô¶¯×Óactivity
+3. å¯åŠ¨å­activity
 
 ``` java
 startActivity(intent);
 ```
 
-### Èç¹ûÒª¶ÁÈ¡×Óactivity´«»ØÀ´µÄÊı¾İ£º
+### å¦‚æœè¦è¯»å–å­activityä¼ å›æ¥çš„æ•°æ®ï¼š
 
-½«ÉÏÃæÆô¶¯×ÓactivityµÄ´úÂë¸Ä³ÉÕâÑù£¬µÚ2¸ö²ÎÊıCODE_ADD_GAMEÊÇÒ»¸öint£¬³ÆÎªrequestCode£¬±êÊ¶ÄãÆô¶¯×ÓactivityµÄÄ¿µÄ
+å°†ä¸Šé¢å¯åŠ¨å­activityçš„ä»£ç æ”¹æˆè¿™æ ·ï¼Œç¬¬2ä¸ªå‚æ•°CODE_ADD_GAMEæ˜¯ä¸€ä¸ªintï¼Œç§°ä¸ºrequestCodeï¼Œæ ‡è¯†ä½ å¯åŠ¨å­activityçš„ç›®çš„
 
 ``` java
 startActivityForResult(intent, CODE_ADD_GAME);
 ```
 
-#### ¶ÁÈ¡Êı¾İ£º
-requestCode¾ÍÊÇÖ®Ç°¸¸activity·¢³öµÄ£¬ÓÃÀ´¼ø±ğÊÇÄÄ¸ö×Óactivity·µ»Ø
-resultCodeÊÇ×ÓactivityµÄ·µ»Ø´úÂë
-dataÊÇ×Óactivity·µ»ØµÄÊı¾İ
+#### è¯»å–æ•°æ®ï¼š
+requestCodeå°±æ˜¯ä¹‹å‰çˆ¶activityå‘å‡ºçš„ï¼Œç”¨æ¥é‰´åˆ«æ˜¯å“ªä¸ªå­activityè¿”å›
+resultCodeæ˜¯å­activityçš„è¿”å›ä»£ç 
+dataæ˜¯å­activityè¿”å›çš„æ•°æ®
 
 ```java
     @Override
@@ -49,49 +49,49 @@ dataÊÇ×Óactivity·µ»ØµÄÊı¾İ
     }
 ```
 
-## ×Óactivity
-### ¶ÁÈ¡Êı¾İ£º
-1. »ñÈ¡´«ÈëµÄintent
+## å­activity
+### è¯»å–æ•°æ®ï¼š
+1. è·å–ä¼ å…¥çš„intent
 
 ```java
 Intent intent = getIntent();
 ```
 
-2. ´ÓintentÖĞ»ñÈ¡Êı¾İ
+2. ä»intentä¸­è·å–æ•°æ®
 ```java
 String type = intent.getStringExtra(REQUEST_TYPE);
-currentGame = (Game) intent.getSerializableExtra(MSG_ITEM); //ÀàËÆµÄ»¹ÓĞgetIntExtraµÈµÈ
+currentGame = (Game) intent.getSerializableExtra(MSG_ITEM); //ç±»ä¼¼çš„è¿˜æœ‰getIntExtraç­‰ç­‰
 ```
 
-### ·µ»Øµ½¸¸activity£º
-1. ´´½¨intent
+### è¿”å›åˆ°çˆ¶activityï¼š
+1. åˆ›å»ºintent
 ```java
 Intent intent = new Intent();
 ```
 
-2. ÉèÖÃresultCode
+2. è®¾ç½®resultCode
 
 ```java
 setResult(RESULT_OK, intent);
 ```
 
-3. ÈçÓĞ±ØÒªÒ²¿ÉÒÔ·ÅÊı¾İ
+3. å¦‚æœ‰å¿…è¦ä¹Ÿå¯ä»¥æ”¾æ•°æ®
 ```java
 intent.putExtra(MSG_RETURN_DATA, currentGame);
 ```
 
-4. Ïú»Ùµ±Ç°×Óactivity
+4. é”€æ¯å½“å‰å­activity
 
 ```java
 finish();
 ```
 
 
-# lambda±í´ïÊ½
+# lambdaè¡¨è¾¾å¼
 
-²Î¿¼£ºhttp://www.runoob.com/java/java8-lambda-expressions.html
+å‚è€ƒï¼šhttp://www.runoob.com/java/java8-lambda-expressions.html
 
-Javaµ±ÖĞ¾­³£»áÕâÃ´Ğ´£º
+Javaå½“ä¸­ç»å¸¸ä¼šè¿™ä¹ˆå†™ï¼š
 ``` java
 button.setOnClickListener(
     new View.OnClickListener() {
@@ -105,7 +105,7 @@ button.setOnClickListener(
 );
 ```
 
-ÔÚjava8ÖĞ¿ÉÒÔÕâÃ´Ğ´£º
+åœ¨java8ä¸­å¯ä»¥è¿™ä¹ˆå†™ï¼š
 ``` java
 button.setOnClickListener(
     (View view) -> {
@@ -116,9 +116,9 @@ button.setOnClickListener(
 );
 ```
 
-ÕâÁ½ÖÖĞ´·¨±¾ÖÊÉÏÊÇÒ»ÑùµÄ£¬Ö»ÊÇÄÜ¹»ÉÙÇÃµã´úÂë¡£
+è¿™ä¸¤ç§å†™æ³•æœ¬è´¨ä¸Šæ˜¯ä¸€æ ·çš„ï¼Œåªæ˜¯èƒ½å¤Ÿå°‘æ•²ç‚¹ä»£ç ã€‚
 
-lambda±í´ïÊ½¿ÉÒÔ½øÒ»²½¼ò»¯£º
+lambdaè¡¨è¾¾å¼å¯ä»¥è¿›ä¸€æ­¥ç®€åŒ–ï¼š
 ``` java
 button.setOnClickListener(
     view -> {
@@ -128,14 +128,14 @@ button.setOnClickListener(
     }
 );
 
-// °Ñº¯ÊıÌå·â×°³ÉÒ»¸ö·½·¨
+// æŠŠå‡½æ•°ä½“å°è£…æˆä¸€ä¸ªæ–¹æ³•
 button.setOnClickListener(
     view -> {
         DlcEditActivity.this.clickCancel(view);
     }
 );
 
-// ÖÕ¼«¼ò»¯
+// ç»ˆæç®€åŒ–
 button.setOnClickListener(this::clickCancel);
 ```
 
@@ -144,15 +144,15 @@ button.setOnClickListener(this::clickCancel);
 ## Adapter (MyAdapter.java)
 
 ### ItemView
-adapterÀïÊ×ÏÈÒªÓĞÒ»¸öViewHolderÀà£¬±ÈÈçMyAdapter.javaÀïµÄ
+adapteré‡Œé¦–å…ˆè¦æœ‰ä¸€ä¸ªViewHolderç±»ï¼Œæ¯”å¦‚MyAdapter.javaé‡Œçš„
 
 ``` java
 public class ItemView extends RecyclerView.ViewHolder
 ```
 
-recycler viewÖĞÒ»¸ö**item**¶ÔÓ¦Ò»¸ö**ItemView**¶ÔÓ¦Ò»¸ö**item.xmlµÄlayout**
+recycler viewä¸­ä¸€ä¸ª**item**å¯¹åº”ä¸€ä¸ª**ItemView**å¯¹åº”ä¸€ä¸ª**item.xmlçš„layout**
 
-ÔÚAdapterÀàÖĞ½«layoutºÍItemView°ó¶¨£º
+åœ¨Adapterç±»ä¸­å°†layoutå’ŒItemViewç»‘å®šï¼š
 ``` java
     @Override
     public ItemView onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -160,11 +160,11 @@ recycler viewÖĞÒ»¸ö**item**¶ÔÓ¦Ò»¸ö**ItemView**¶ÔÓ¦Ò»¸ö**item.xmlµÄlayout**
         return new ItemView(v);
     }
 ```
-ÕâÀï°ó¶¨layoutÖ®ºó£¬ItemView¾Í¿ÉÒÔÍ¨¹ıfindViewById»ñµÃlayoutÖĞµÄÔªËØ£¬ÔÚonBindViewHolder·½·¨Àï¾ÍÄÜÍ¨¹ıItemViewÀ´ĞŞ¸ÄÕâĞ©ÔªËØ¡£
+è¿™é‡Œç»‘å®šlayoutä¹‹åï¼ŒItemViewå°±å¯ä»¥é€šè¿‡findViewByIdè·å¾—layoutä¸­çš„å…ƒç´ ï¼Œåœ¨onBindViewHolderæ–¹æ³•é‡Œå°±èƒ½é€šè¿‡ItemViewæ¥ä¿®æ”¹è¿™äº›å…ƒç´ ã€‚
 
 ### factory method
 
-ÒòÎªDLCÁĞ±íºÍÓÎÏ·ÁĞ±íµÄÍâ¹ÛÉÔÓĞ²»Í¬£¬ËùÒÔÓÃÁËÁ½¸öfactory methodÀ´´´½¨adapter
+å› ä¸ºDLCåˆ—è¡¨å’Œæ¸¸æˆåˆ—è¡¨çš„å¤–è§‚ç¨æœ‰ä¸åŒï¼Œæ‰€ä»¥ç”¨äº†ä¸¤ä¸ªfactory methodæ¥åˆ›å»ºadapter
 
 ``` java
 public static MyAdapter ForGames(List<Game> games, ListActivity.ItemClickListener callback)
@@ -173,14 +173,14 @@ public static MyAdapter ForDlcs(List<DlcInfo> dlcs, ListActivity.ItemClickListen
 
 ### ItemClickListener
 
-µã»÷ÁĞ±íÖĞµÄÄ³¸öÓÎÏ·Ê±£¬ÎÒÃÇÒªÏòGameDetailActivity´«ÈëÓÎÏ·ÔÚgameListÖĞµÄindex¡£µ«ÊÇÄ¬ÈÏµÄOnClickListenerÖ»ÓĞÒ»¸öViewµÄ²ÎÊı£¬ËùÒÔÕâÀï×Ô¶¨ÒåÁËÒ»¸ö½Ó¿ÚÀ´°ü×°Ò»ÏÂ¡£
+ç‚¹å‡»åˆ—è¡¨ä¸­çš„æŸä¸ªæ¸¸æˆæ—¶ï¼Œæˆ‘ä»¬è¦å‘GameDetailActivityä¼ å…¥æ¸¸æˆåœ¨gameListä¸­çš„indexã€‚ä½†æ˜¯é»˜è®¤çš„OnClickListeneråªæœ‰ä¸€ä¸ªViewçš„å‚æ•°ï¼Œæ‰€ä»¥è¿™é‡Œè‡ªå®šä¹‰äº†ä¸€ä¸ªæ¥å£æ¥åŒ…è£…ä¸€ä¸‹ã€‚
 
-ListActivityÔÚÕâÀï½«º¯ÊıÌå´«Èë
+ListActivityåœ¨è¿™é‡Œå°†å‡½æ•°ä½“ä¼ å…¥
 ``` java
 adapter = MyAdapter.ForGames(this.games, this::clickViewGame);
 ```
 
-MyAdapterÊÕµ½Ö®ºó£¬´æ·Åµ½this.callbackÖĞ
+MyAdapteræ”¶åˆ°ä¹‹åï¼Œå­˜æ”¾åˆ°this.callbackä¸­
 ``` java
 // 
 public static MyAdapter ForGames(List<Game> games, ItemClickListener callback) {
@@ -193,7 +193,7 @@ public static MyAdapter ForGames(List<Game> games, ItemClickListener callback) {
 }
 ```
 
-×îºó°ü×°Ò»²ã´«¸øOnClickListener£¬Êµ¼Êµ÷ÓÃµÄÊÇListActivityÀïµÄclickViewGame·½·¨
+æœ€ååŒ…è£…ä¸€å±‚ä¼ ç»™OnClickListenerï¼Œå®é™…è°ƒç”¨çš„æ˜¯ListActivityé‡Œçš„clickViewGameæ–¹æ³•
 
 
 ``` java            
